@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    function prodOfDigit(){
+
+    let n=prompt("Enter Number")
+
+    let prod=1
+    let m 
+   
+
+    while(n>0){
+        m=n%10
+        prod=prod*m
+        n= parseFloat(n/10).toFixed(0)
+    }
+    console.log(prod)
+
+}
+
+prodOfDigit()
+
+</script>

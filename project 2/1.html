@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+  
+    let Guest=prompt("Enter Guest Number")
+
+    if(Guest == 0){
+        console.log( "Guest attending the reception. Are you sure?")
+    } else if(Guest == 1){
+        console.log( "Great! There is one guest attending the reception.")
+    }else if(Guest == 2){
+        console.log("Perfect! You and one other person will be attending the reception.")
+    }else if(Guest > 2){
+        console.log( "guests will be attending the reception.")
+    }else{
+        console.log( "Invalid input. Please enter a valid number of guests.")
+    }
+
+    for(let i=1; i <= Guest; i++){
+
+        if(Guest == 3){
+        break
+        }
+        console.log("Thank you, Guest " + i)
+        document.write("Thank you, Guest " + i)
+ 
+    }
+
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let book =[
+      
+    { Title:"The Magic Tree",author:"	Sanjeev Joshi",price: 90,quantityavailable:"true" },
+    { Title:"Winter Fairy",author:"	Dr. Rajen Saikia",price: 25,quantityavailable:"true"  },
+    { Title:"Wizards of Ice.",author:"	Arup Kumar Dutta",price:56 ,quantityavailable:"false" },
+    { Title:"The Enchanted Ones.",author:"	Vairamuthu",price:63 ,quantityavailable:"true" },
+    { Title:"A Spell Too Far.",author:"Manorama Mishra",price:68 ,quantityavailable:"true" },
+      
+    ]
+
+    let arr=[];
+
+    for(let i=0;i<book.length;i++){
+        if(book[i].price <= 60 && book[i].quantityavailable === "true"){
+            arr.push(book[i].Title)
+        }
+    }
+
+    console.log(arr)
+
+
+    
+</script>

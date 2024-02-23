@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<script>
+
+var inputArray = ["assignment", "problem", "media", "upload"];
+
+var newArray = inputArray.filter(str => {
+    var firstChar = str.charAt(0);
+    var lastChar = str.charAt(str.length - 1);
+    return firstChar === 'a' || lastChar === 'a'; 
+});
+
+
+console.log(newArray); 
+
+    
+</script>

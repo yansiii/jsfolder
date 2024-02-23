@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<script>
+
+let quotes = [
+    { text: "Education is the key to unlock the golden door of freedom.", author: "George Washington Carver", category: "education" },
+    { text: "The roots of education are bitter, but the fruit is sweet.", author: "Aristotle", category: "education" },
+    { text: "The function of education is to teach one to think intensively and to think critically. Intelligence plus character - that is the goal of true education.", author: "Martin Luther King Jr.", category: "life" },
+    { text: "Education is not the filling of a pail, but the lighting of a fire.", author: "William Butler Yeats", category: "inspiration" },
+    { text: "The only person who is educated is the one who has learned how to learn... and change.", author: "Carl Rogers", category: "education" }
+];
+
+
+let arr = []
+for(let i = 0; i<quotes.length; i++){
+    if(quotes[i].category === "education"){
+        arr.push(quotes[i].category)
+    }
+}
+console.log(arr)
+
+</script>
+
+

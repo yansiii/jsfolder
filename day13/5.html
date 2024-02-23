@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <label for="">first</label>
+<input type="text" name="" id="in1">
+
+<br><br><br>
+
+<label for="">second</label>
+<input type="text" name="" id="in2">
+
+
+
+
+
+</body>
+</html>
+
+
+<script>
+
+let a = document.getElementById("in1").value
+let b = document.getElementById("in2").value    
+
+function power( a, b)
+{
+    
+    let pow = 1;
+ 
+    
+    for (let i = 0; i < b; i++) {
+        pow = pow * a;
+    }
+ 
+    return pow;
+}
+ 
+   
+    
+    console.log(power(a, b));
+
+
+</script>

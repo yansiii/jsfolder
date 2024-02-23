@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">enter first</label>
+    <input type="text" id="in1">
+    <br><br><br>
+    <label for="">enter second</label>
+    <input type="text" id="in2">
+    <br><br><br>
+    <label for="">enter third</label>
+    <input type="text" id="in3">
+    <br><br><br>
+    <label for="">enter forth</label>
+    <input type="text" id="in4">
+    <br><br><br>
+    <h1 id="ans"></h1>
+</body>
+</html>
+<script>
+    let a = document.getElementById("in1").value
+    let b = document.getElementById("in2").value
+    let c = document.getElementById("in3").value
+    let d = document.getElementById("in4").value
+
+    if(a==""||b==""||c=="" ||d==""){
+        document.getElementById("ans").innerHTML="enter valid numbers"
+    }else{
+        a=parseInt(a)
+        b=parseInt(b)
+        c=parseInt(c)
+        d=parseInt(d)
+
+        if (a < b && a < c && a < d)
+        document.getElementById("ans").innerHTML = a
+else if (b < a && b < c && b < d)
+document.getElementById("ans").innerHTML = b
+else if (c < a && c < b && c < d)
+document.getElementById("ans").innerHTML = c
+else if (d < a && d < a && d < c)
+document.getElementById("ans").innerHTML = d
+    }
+</script>

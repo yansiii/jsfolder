@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Enter Colour</h1>
+
+        <input type="text" name="" id="in">
+
+        <h1 id="colour"></h1>
+
+        <h1>red colour</h1>
+        <h1>yellow colour</h1>
+        <h1>green colour</h1>
+        <h1>light colour</h1>
+    </center>
+</body>
+</html>
+<script>
+    let a = document.getElementById("in").value
+
+    switch(a){
+        case "red colour" :console.log("Stop!")
+        break
+        case "yellow colour" : console.log("Slow down!")
+        break
+        case "green colour" : console.log("Go.")
+        break
+        case "light colour" : console.log("Invalid light color")
+        break
+    }
+
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<labe>Enter the principal amount </labe>
+<input type="text" name="" id="in1">
+
+<br><br><br>
+
+<labe>Enter the rate of interest</labe>
+<input type="text" name="" id="in2">
+
+<br><br><br>
+
+<labe>Enter the time in years</labe>
+<input type="text" name="" id="in3">
+
+<br><br><br>
+
+
+
+
+<h1 id="ans"></h1>
+
+
+</body>
+</html>
+
+
+<script>
+
+let p = document.getElementById("in1").value
+let r = document.getElementById("in2").value
+let t = document.getElementById("in3").value
+
+let interest = (p*r*t)/100
+document.getElementById("ans").innerHTML = interest
+
+</script>

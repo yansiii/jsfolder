@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <label for="">Enter principal Amount </label>
+    <input type="text" id="in1">
+    <br><br><br>
+    <!-- <label for="">Enter rate of intrest </label>
+    <input type="text" id="in2">
+    <br><br><br> -->
+    <label for="">Enter time in years </label>
+    <input type="text" id="in3">
+    <br><br><br>
+    <h1 id="ans"></h1>
+</body>
+</html>
+<script>
+    let p = document.getElementById("in1").value
+    // let r = document.getElementById("in2").value
+    let t = document.getElementById("in3").value
+    let interest
+   
+if (p=="" ) {
+        document.getElementById("ans").innerHTML= "Enter valid number"
+}else{
+    
+    if(p>=0 && p<=10000){
+        interest=(p * 5 * t)/100
+        document.getElementById("ans").innerHTML=interest
+    }else if(p>=10001 && p<=20000){
+        interest=(p * 10 * t)/100
+        document.getElementById("ans").innerHTML=interest
+    }else if(p>=20001 && p<=30000){
+        interest=(p * 15 * t)/100
+        document.getElementById("ans").innerHTML=interest
+    }else if(p>=30001 && p<=40000){
+        interest=(p * 20 * t)/100
+        document.getElementById("ans").innerHTML=interest
+    }else if(p>=100000 && p<=40000){
+        interest=(p * 25 * t)/100
+        document.getElementById("ans").innerHTML=interest
+    }
+   
+}
+</script>
